@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PedidosApp</string>
+    <string name="rut">Rut</string>
+    <string name="pedido">Pedido</string>
+    <string name="articles">Cantidad de Articulos</string>
+    <string name="articlesEnt">Cantidad de articulos entregados</string>
+    <string name="date">Fecha</string>
+    <string name="detail">Detalle</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="Subir">Subir</string>
+    <string name="hora">Hora</string>
+    <string name="photo1">photo1</string>
+    <string name="photo2">photo2</string>
+    <string name="photo3">photo3</string>
+</resources>
