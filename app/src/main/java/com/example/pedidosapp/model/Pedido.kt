@@ -8,7 +8,7 @@ import java.util.*
 data class Pedido(
 
     @PrimaryKey(autoGenerate = true)
-    val id: Int,
+    val pedidoId: Int,
     val rut: String,
     val pedido: Int,
     val cantPro: Int,
