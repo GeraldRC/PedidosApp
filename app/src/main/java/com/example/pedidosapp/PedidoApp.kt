@@ -6,6 +6,5 @@ import com.example.pedidosapp.db.PedidoDb
 
 class PedidoApp: Application() {
 
-    val room: PedidoDb = Room.databaseBuilder(this,PedidoDb::class.java,"pedidos")
-        .build()
+ val database by lazy { PedidoDb.getDatabase(this) }
 }

@@ -10,7 +10,11 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.example.pedidosapp.PedidoApp
 import com.example.pedidosapp.databinding.ActivityPedidoBinding
+import com.example.pedidosapp.model.Pedido
+import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.util.*
@@ -59,6 +63,7 @@ class PedidoActivity : AppCompatActivity() {
         photo1()
         photo2()
         photo3()
+
     }
 
     private fun photo1() {

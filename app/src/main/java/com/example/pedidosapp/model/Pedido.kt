@@ -9,6 +9,7 @@ data class Pedido(
 
     @PrimaryKey(autoGenerate = true)
     val pedidoId: Int,
+
     val rut: String,
     val pedido: Int,
     val cantPro: Int,

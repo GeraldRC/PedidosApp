@@ -6,6 +6,7 @@ import androidx.room.Query
 import androidx.room.Transaction
 import com.example.pedidosapp.model.Pedido
 import com.example.pedidosapp.model.PedidoImages
+import kotlinx.coroutines.flow.Flow
 
 
 @Dao
@@ -13,14 +14,14 @@ interface PedidoDao {
 
     @Transaction
     @Query("SELECT * FROM Pedido")
-    fun getAll(): List<PedidoImages>
+    fun getAll(): Flow<List<PedidoImages>>
 
     @Transaction
     @Query("SELECT * FROM PEDIDO WHERE PEDIDO.pedidoId = :id")
-    fun getPedidoById(id: Int): PedidoImages
+    suspend fun getPedidoById(id: Int): PedidoImages
 
     @Insert
-    fun insert(pedido: Pedido)
+    suspend fun insert(pedido: Pedido)
 
 
 }
